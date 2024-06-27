@@ -10,7 +10,6 @@ import TextField from '@mui/material/TextField';
 import Avatar from '@mui/material/Avatar';
 import { FaShoppingCart, FaUser, FaBars, FaSearch } from 'react-icons/fa';
 import {InputAdornment} from "@mui/material";
-import {AccountCircle} from "@mui/icons-material";
 
 export const Header: React.FC = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

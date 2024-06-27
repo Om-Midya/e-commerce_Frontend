@@ -28,7 +28,7 @@ export const Carousel: React.FC = () => {
         <Box style={{
             width: '90%',
             height: '50vh',
-            marginTop: '7%',
+            marginTop: 0,
             marginLeft: 'auto',
             marginRight: 'auto',
         }}>

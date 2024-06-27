@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #f2f2f2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,6 +27,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -41,7 +42,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: lightgray;
   cursor: pointer;
   transition: border-color 0.25s;
 }
