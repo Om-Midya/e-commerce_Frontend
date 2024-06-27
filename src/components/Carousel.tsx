@@ -4,13 +4,18 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Box } from '@mui/material';
 import image from '../assets/ian-schneider-TamMbr4okv4-unsplash.jpg';
+import img1 from '../assets/img.png';
+import img2 from '../assets/img_1.png';
+import img3 from '../assets/img_2.png';
+import img4 from '../assets/img_3.png';
+import img5 from '../assets/img_4.png';
 
 const carouselImages = [
-    image,
-    image,
-    image,
-    image,
-    image,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
 ];
 
 const settings = {
@@ -27,7 +32,7 @@ export const Carousel: React.FC = () => {
     return (
         <Box style={{
             width: '90%',
-            height: '50vh',
+            height: 'auto',
             marginTop: 0,
             marginLeft: 'auto',
             marginRight: 'auto',
