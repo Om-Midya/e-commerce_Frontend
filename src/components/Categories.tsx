@@ -1,8 +1,6 @@
 import React from 'react';
-import { Box, Menu, MenuItem, Typography } from '@mui/material';
+import { Box, Menu, MenuItem, Typography, useMediaQuery, useTheme } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
-
 import data from "../../public/data.json";
 
 interface Category {
@@ -27,6 +25,9 @@ export const Categories: React.FC = () => {
     const [nestedAnchorEl, setNestedAnchorEl] = React.useState<null | HTMLElement>(null);
     const [subCategories, setSubCategories] = React.useState<SubCategory[]>([]);
     const [nestedSubCategories, setNestedSubCategories] = React.useState<NestedSubCategory[]>([]);
+
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     const categories: Category[] = data.categories;
 
@@ -57,14 +58,17 @@ export const Categories: React.FC = () => {
     return (
         <Box
             display="flex"
+            overflowX={isSmallScreen ? "auto" : "hidden"}
             bgcolor="whitesmoke"
             p={2}
             style={{
                 position: 'absolute',
-                top: '10%',
+                top: '7%',
+                left: 0,
                 zIndex: 100,
                 width: '100%',
-                justifyContent: 'space-around',
+                justifyContent: isSmallScreen ? 'flex-start' : 'space-around',
+                alignItems: 'center',
             }}
         >
             {categories.map((category: Category) => (
