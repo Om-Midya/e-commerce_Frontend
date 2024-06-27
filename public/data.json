@@ -1,0 +1,253 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "subCategories": [
+        {
+          "id": 101,
+          "name": "Mobile Phones",
+          "nestedSubCategories": [
+            { "id": 10101, "name": "Smartphones" },
+            { "id": 10102, "name": "Feature Phones" },
+            { "id": 10103, "name": "Accessories" }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Laptops",
+          "nestedSubCategories": [
+            { "id": 10201, "name": "Gaming Laptops" },
+            { "id": 10202, "name": "Ultrabooks" },
+            { "id": 10203, "name": "2-in-1 Laptops" }
+          ]
+        },
+        {
+          "id": 103,
+          "name": "Cameras",
+          "nestedSubCategories": [
+            { "id": 10301, "name": "DSLR" },
+            { "id": 10302, "name": "Mirrorless" },
+            { "id": 10303, "name": "Point & Shoot" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fashion",
+      "subCategories": [
+        {
+          "id": 201,
+          "name": "Men's Clothing",
+          "nestedSubCategories": [
+            { "id": 20101, "name": "Shirts" },
+            { "id": 20102, "name": "T-Shirts" },
+            { "id": 20103, "name": "Jackets" }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Women's Clothing",
+          "nestedSubCategories": [
+            { "id": 20201, "name": "Dresses" },
+            { "id": 20202, "name": "Tops" },
+            { "id": 20203, "name": "Skirts" }
+          ]
+        },
+        {
+          "id": 203,
+          "name": "Accessories",
+          "nestedSubCategories": [
+            { "id": 20301, "name": "Bags" },
+            { "id": 20302, "name": "Belts" },
+            { "id": 20303, "name": "Hats" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Home Appliances",
+      "subCategories": [
+        {
+          "id": 301,
+          "name": "Kitchen Appliances",
+          "nestedSubCategories": [
+            { "id": 30101, "name": "Microwaves" },
+            { "id": 30102, "name": "Refrigerators" },
+            { "id": 30103, "name": "Mixers" }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Cleaning Appliances",
+          "nestedSubCategories": [
+            { "id": 30201, "name": "Vacuum Cleaners" },
+            { "id": 30202, "name": "Dishwashers" },
+            { "id": 30203, "name": "Washing Machines" }
+          ]
+        },
+        {
+          "id": 303,
+          "name": "Cooling & Heating",
+          "nestedSubCategories": [
+            { "id": 30301, "name": "Air Conditioners" },
+            { "id": 30302, "name": "Heaters" },
+            { "id": 30303, "name": "Fans" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Books",
+      "subCategories": [
+        {
+          "id": 401,
+          "name": "Fiction",
+          "nestedSubCategories": [
+            { "id": 40101, "name": "Novels" },
+            { "id": 40102, "name": "Short Stories" },
+            { "id": 40103, "name": "Fantasy" },
+            { "id": 40104, "name": "Science Fiction" },
+            { "id": 40105, "name": "Mystery" }
+          ]
+        },
+        {
+          "id": 402,
+          "name": "Non-Fiction",
+          "nestedSubCategories": [
+            { "id": 40201, "name": "Biographies" },
+            { "id": 40202, "name": "Self-Help" },
+            { "id": 40203, "name": "Cooking" },
+            { "id": 40204, "name": "Health" },
+            { "id": 40205, "name": "Travel" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sports & Outdoors",
+      "subCategories": [
+        {
+          "id": 501,
+          "name": "Fitness Equipment",
+          "nestedSubCategories": [
+            { "id": 50101, "name": "Treadmills" },
+            { "id": 50102, "name": "Dumbbells" },
+            { "id": 50103, "name": "Exercise Bikes" },
+            { "id": 50104, "name": "Yoga Mats" }
+          ]
+        },
+        {
+          "id": 502,
+          "name": "Outdoor Gear",
+          "nestedSubCategories": [
+            { "id": 50201, "name": "Tents" },
+            { "id": 50202, "name": "Backpacks" },
+            { "id": 50203, "name": "Sleeping Bags" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Beauty & Personal Care",
+      "subCategories": [
+        {
+          "id": 601,
+          "name": "Skincare",
+          "nestedSubCategories": [
+            { "id": 60101, "name": "Moisturizers" },
+            { "id": 60102, "name": "Cleansers" },
+            { "id": 60103, "name": "Sunscreens" }
+          ]
+        },
+        {
+          "id": 602,
+          "name": "Hair Care",
+          "nestedSubCategories": [
+            { "id": 60201, "name": "Shampoos" },
+            { "id": 60202, "name": "Conditioners" },
+            { "id": 60203, "name": "Hair Oils" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Toys & Games",
+      "subCategories": [
+        {
+          "id": 701,
+          "name": "Action Figures",
+          "nestedSubCategories": [
+            { "id": 70101, "name": "Superheroes" },
+            { "id": 70102, "name": "Anime" },
+            { "id": 70103, "name": "Movie Characters" }
+          ]
+        },
+        {
+          "id": 702,
+          "name": "Board Games",
+          "nestedSubCategories": [
+            { "id": 70201, "name": "Strategy Games" },
+            { "id": 70202, "name": "Family Games" },
+            { "id": 70203, "name": "Card Games" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Groceries",
+      "subCategories": [
+        {
+          "id": 801,
+          "name": "Beverages",
+          "nestedSubCategories": [
+            { "id": 80101, "name": "Tea" },
+            { "id": 80102, "name": "Coffee" },
+            { "id": 80103, "name": "Juices" },
+            { "id": 80104, "name": "Sodas" }
+          ]
+        },
+        {
+          "id": 802,
+          "name": "Snacks",
+          "nestedSubCategories": [
+            { "id": 80201, "name": "Chips" },
+            { "id": 80202, "name": "Nuts" },
+            { "id": 80203, "name": "Cookies" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Automotive",
+      "subCategories": [
+        {
+          "id": 901,
+          "name": "Car Accessories",
+          "nestedSubCategories": [
+            { "id": 90101, "name": "Seat Covers" },
+            { "id": 90102, "name": "Floor Mats" },
+            { "id": 90103, "name": "Air Fresheners" }
+          ]
+        },
+        {
+          "id": 902,
+          "name": "Motorcycle Accessories",
+          "nestedSubCategories": [
+            { "id": 90201, "name": "Helmets" },
+            { "id": 90202, "name": "Gloves" },
+            { "id": 90203, "name": "Jackets" }
+          ]
+        }
+      ]
+    }
+  ]
+}
