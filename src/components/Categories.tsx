@@ -71,7 +71,7 @@ export const Categories: React.FC = () => {
                     margin: '0',
                 }}>
                     <MenuItem
-                        onClick={(event) => handleCategoryClick(event, category.subCategories)}
+                        onMouseOver={(event) => handleCategoryClick(event, category.subCategories)}
                         style={{
                             cursor: 'pointer',
                             color: 'black',
