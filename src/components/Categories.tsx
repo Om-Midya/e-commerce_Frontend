@@ -67,12 +67,15 @@ export const Categories: React.FC = () => {
             }}
         >
             {categories.map((category) => (
-                <Box key={category.id} style={{
+                <Box
+                    key={category.id}
+                    style={{
                     margin: '0 1%',
-                }}>
+                }}
+                >
                     <Typography
                         variant="h6"
-                        onMouseOver={(event) => handleCategoryClick(event, category.subCategories)}
+                        onMouseEnter={(event) => handleCategoryClick(event, category.subCategories)}
                         style={{
                             cursor: 'pointer',
                             color: 'black',
@@ -96,13 +99,16 @@ export const Categories: React.FC = () => {
                             vertical: 'top',
                             horizontal: 'left',
                         }}
+                        MenuListProps={{
+                            onMouseLeave: handleClose,
+                        }}
                     >
                         {subCategories.map((subCategory) => (
                             <NestedMenuItem
                                 key={subCategory.id}
                                 label={subCategory.name}
                                 parentMenuOpen={Boolean(anchorEl)}
-                                onClick={(event) => handleSubCategoryClick(event, subCategory.nestedSubCategories)}
+                                // onClick={(event) => handleSubCategoryClick(event, subCategory.nestedSubCategories)}
                             >
                                 {subCategory.nestedSubCategories.map((nestedSubCategory) => (
                                     <MenuItem key={nestedSubCategory.id} onClick={handleClose}>
