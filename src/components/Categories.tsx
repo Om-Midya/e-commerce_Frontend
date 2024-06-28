@@ -1,8 +1,8 @@
 import React from 'react';
-import {Box, ListItemButton, Menu, MenuItem, Typography, useMediaQuery, useTheme} from '@mui/material';
+import {Box, Menu, MenuItem, useMediaQuery, useTheme} from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import data from "../../public/data.json";
-import {NestedDropdown,NestedMenuItem} from "mui-nested-menu";
+import {NestedMenuItem} from "mui-nested-menu";
 
 interface Category {
     id: number;
@@ -25,10 +25,8 @@ export const Categories: React.FC = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const [nestedAnchorEl, setNestedAnchorEl] = React.useState<null | HTMLElement>(null);
     const [subCategories, setSubCategories] = React.useState<SubCategory[]>([]);
-    const [nestedSubCategories, setNestedSubCategories] = React.useState<NestedSubCategory[]>([]);
 
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
 
     const categories: Category[] = data.categories;
 
@@ -42,14 +40,6 @@ export const Categories: React.FC = () => {
         }
     };
 
-    const handleSubCategoryClick = (event: React.MouseEvent<HTMLElement>, nestedSubCategories: NestedSubCategory[]) => {
-        if (nestedAnchorEl === event.currentTarget) {
-            setNestedAnchorEl(null);
-        } else {
-            setNestedAnchorEl(event.currentTarget);
-            setNestedSubCategories(nestedSubCategories);
-        }
-    };
 
     const handleClose = () => {
         setAnchorEl(null);

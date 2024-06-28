@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Box } from '@mui/material';
-import image from '../assets/ian-schneider-TamMbr4okv4-unsplash.jpg';
 import img1 from '../assets/img.png';
 import img2 from '../assets/img_1.png';
 import img3 from '../assets/img_2.png';

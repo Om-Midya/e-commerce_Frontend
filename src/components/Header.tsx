@@ -7,7 +7,6 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
-import Avatar from '@mui/material/Avatar';
 import { FaShoppingCart, FaUser, FaBars, FaSearch } from 'react-icons/fa';
 import {InputAdornment} from "@mui/material";
 
@@ -27,10 +26,6 @@ export const Header: React.FC = () => {
         setSearch(event.target.value);
     };
 
-    const handleSearch = () => {
-        console.log('Search:', search);
-        // Implement your search logic here
-    };
 
     return (
         <AppBar position="fixed">
