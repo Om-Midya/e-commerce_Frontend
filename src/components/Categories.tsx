@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Menu, MenuItem, Typography, useMediaQuery, useTheme } from '@mui/material';
+import {Box, ListItemButton, Menu, MenuItem, Typography, useMediaQuery, useTheme} from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import data from "../../public/data.json";
 import {NestedDropdown,NestedMenuItem} from "mui-nested-menu";
@@ -63,30 +63,27 @@ export const Categories: React.FC = () => {
                 justifyContent: 'center',
                 margin: '4% 2%',
                 backgroundColor: 'white',
-                padding: '1%',
+                padding: '0.5%',
             }}
         >
             {categories.map((category) => (
-                <Box
-                    key={category.id}
-                    style={{
-                    margin: '0 1%',
-                }}
-                >
-                    <Typography
-                        variant="h6"
-                        onMouseEnter={(event) => handleCategoryClick(event, category.subCategories)}
+                <Box key={category.id} style={{
+                    margin: '0',
+                }}>
+                    <MenuItem
+                        onClick={(event) => handleCategoryClick(event, category.subCategories)}
                         style={{
                             cursor: 'pointer',
                             color: 'black',
                             display: 'flex',
                             justifyContent: 'center',
-                    }}
-
+                        }}
                     >
-                        {category.name}
-                        <ArrowDropDownIcon />
-                    </Typography>
+
+                    {category.name}
+                    <ArrowDropDownIcon />
+
+                    </MenuItem>
                     <Menu
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}
@@ -108,7 +105,7 @@ export const Categories: React.FC = () => {
                                 key={subCategory.id}
                                 label={subCategory.name}
                                 parentMenuOpen={Boolean(anchorEl)}
-                                // onClick={(event) => handleSubCategoryClick(event, subCategory.nestedSubCategories)}
+                                onClick={(event) => handleSubCategoryClick(event, subCategory.nestedSubCategories)}
                             >
                                 {subCategory.nestedSubCategories.map((nestedSubCategory) => (
                                     <MenuItem key={nestedSubCategory.id} onClick={handleClose}>
