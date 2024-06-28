@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Menu, MenuItem, useMediaQuery, useTheme} from '@mui/material';
+import {Box, Menu, MenuItem} from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import data from "../../public/data.json";
 import {NestedMenuItem} from "mui-nested-menu";
@@ -23,7 +23,6 @@ interface NestedSubCategory {
 
 export const Categories: React.FC = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    const [nestedAnchorEl, setNestedAnchorEl] = React.useState<null | HTMLElement>(null);
     const [subCategories, setSubCategories] = React.useState<SubCategory[]>([]);
 
 
@@ -36,14 +35,12 @@ export const Categories: React.FC = () => {
         } else {
             setAnchorEl(event.currentTarget);
             setSubCategories(subCategories);
-            setNestedAnchorEl(null);
         }
     };
 
 
     const handleClose = () => {
         setAnchorEl(null);
-        setNestedAnchorEl(null);
     };
 
     return (
@@ -95,7 +92,6 @@ export const Categories: React.FC = () => {
                                 key={subCategory.id}
                                 label={subCategory.name}
                                 parentMenuOpen={Boolean(anchorEl)}
-                                onClick={(event) => handleSubCategoryClick(event, subCategory.nestedSubCategories)}
                             >
                                 {subCategory.nestedSubCategories.map((nestedSubCategory) => (
                                     <MenuItem key={nestedSubCategory.id} onClick={handleClose}>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import {Header} from "./components/Header.tsx";
 import {Categories} from "./components/Categories.tsx";
